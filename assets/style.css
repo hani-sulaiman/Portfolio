@@ -118,6 +118,7 @@ main aside .prof :not(p):not(h3) {
   background-color: transparent;
   outline: 3px solid #f0f0f0;
   border-radius: 50%;
+  -webkit-border-radius:50%;
   width: 125px;
   height: 125px;
   outline-offset: 7px;
