@@ -617,10 +617,16 @@ aside .container-identity .knowledge ul {
   list-style-image: url(icons/checked.svg);
 }
 
+main section{
+  scroll-snap-type: y mandatory;
+}
+main section .snap{
+  scroll-snap-align: start;
+}
 header {
   margin: 0;
   width: 100%;
-  height: 520px;
+  height: 600px;
   border-radius: 20px;
 
 }
@@ -838,14 +844,16 @@ main section .projects .cards button.show-more {
 }
 
 main section .orders {
+
+  position: relative;
+}
+main section .orders .container{
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   flex-direction: row;
-  position: relative;
 }
-
-main section .orders .card {
+main section .orders .container .card {
   display: flex;
   align-items: center;
   justify-content: center;
