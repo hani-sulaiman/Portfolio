@@ -898,6 +898,7 @@ main section .plans {
   flex-wrap: wrap;
   flex-direction: row;
   position: relative;
+  padding-bottom: 15px;
 }
 
 main section h2 {
