@@ -101,9 +101,13 @@ function menu_btn() {
     document.querySelector('.container-menu').classList.toggle("change");
     let aside = document.querySelector('aside');
     if (aside.classList.contains('show-up')) {
-        aside.classList.toggle("show-up");
-        document.querySelector('.sidebar').style="background:#181c44e0;";
+        aside.style="left:-300px;";
+        setTimeout(() => {   
+            aside.classList.toggle("show-up");
+            document.querySelector('.sidebar').style="background:#181c44e0;";
+        }, 500);
     } else {
+        aside.style="left:0px;";
         aside.classList.add('show-up');
         document.querySelector('.sidebar').style="background:transparent!important;";
     }
