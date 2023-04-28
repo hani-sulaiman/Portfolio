@@ -616,13 +616,6 @@ aside .container-identity .knowledge ul {
   color: #b3b3b3;
   list-style-image: url(icons/checked.svg);
 }
-
-main section{
-  scroll-snap-type: y mandatory;
-}
-main section .snap{
-  scroll-snap-align: start;
-}
 header {
   margin: 0;
   width: 100%;
